@@ -12,7 +12,7 @@ module ShopifyApp
     private
 
     def set_esdk_headers
-      response.set_header('P3P', 'CP="Not used"')
+      response.headers['P3P'] = 'CP="Not used"'
       response.headers.except!('X-Frame-Options')
     end
   end
