@@ -1,5 +1,5 @@
 module ShopifyApp
-  class FulfillmentServicesController < ApplicationController
+  class FulfillmentServicesController < ActionController::Base
     class ShopifyApp::MissingFulfillmentServiceError < StandardError; end
 
     def fetch_stock

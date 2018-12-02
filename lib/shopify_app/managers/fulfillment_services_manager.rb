@@ -54,7 +54,7 @@ module ShopifyApp
     end
 
     def callback_url(name)
-      File.join(ShopifyApp.configuration.base_url, 'fulfillment_services', name.underscore)
+      File.join(ShopifyApp.configuration.base_url, ShopifyApp.configuration.root_url, 'fulfillment_services', name.underscore)
     end
   end
 end
